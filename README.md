@@ -60,7 +60,7 @@ Abre AutoCAD con una copia de trabajo. Comprueba en tu app de IA que aparece **b
 | **Editar en un DWG abierto** | Mover, copiar y borrar objetos ordinarios; cambiar atributos de bloques estáticos. |
 | **Trabajar con DXF** | Crear y modificar geometría, curvas continuas, textos, bloques, cotas y hojas; exportar PDF, PNG o SVG. |
 
-Las **36 herramientas** comparten el mismo flujo de control: identificar el dibujo y sus unidades, preparar una vista previa y confirmar el cambio. Si cambia el estado comprobado, la aplicación del cambio se rechaza.
+Las **36 herramientas** incluyen lectura, creación y edición. Para cambiar un dibujo, el flujo es identificarlo y comprobar sus unidades, preparar una vista previa y confirmar el cambio. Si cambia el estado comprobado, la aplicación del cambio se rechaza.
 
 **En DWG**, revisas el resultado y guardas tú desde AutoCAD. **En DXF**, confirmar la aplicación guarda el archivo y conserva una copia inmediatamente anterior cuando se reemplaza. Un DXF se abre en AutoCAD, pero no se presenta como un DWG.
 
