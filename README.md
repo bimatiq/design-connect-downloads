@@ -12,7 +12,7 @@
   <a href="https://github.com/bimatiq/design-connect-downloads/releases/latest/download/BIMATIQ.DesignConnect-stable-Setup.exe"><img src="assets/download-windows.svg" alt="Descargar para Windows · x64" width="280" height="52"></a>
 </p>
 
-<p align="center">Versión 0.2.5 &nbsp; · &nbsp; Windows x64 &nbsp; · &nbsp; AutoCAD Architecture 2026</p>
+<p align="center">Versión 0.2.5 &nbsp; · &nbsp; Windows x64 &nbsp; · &nbsp; AutoCAD 2026</p>
 
 <p align="center">
   <a href="#empieza-en-3-pasos">Instalación</a> &nbsp; / &nbsp;
@@ -69,12 +69,12 @@ Las **36 herramientas** incluyen lectura, creación y edición. Para cambiar un 
 | Necesitas | Entorno de esta versión |
 | :--- | :--- |
 | **Sistema** | Windows x64. |
-| **CAD validado** | AutoCAD Architecture 2026, versión 25.1, con tu licencia correspondiente. |
+| **CAD** | AutoCAD 2026 y AutoCAD Architecture 2026 (25.1), con tu licencia correspondiente. Consulta el alcance comprobado debajo. |
 | **App de IA** | OpenAI / Codex local o Claude Desktop, con tu propia cuenta y acceso a herramientas MCP. |
 | **Internet** | Para la app de IA, las descargas y las actualizaciones. El procesamiento CAD del conector es local. |
 | **Dependencias** | El instalador incluye el entorno del conector. No hace falta instalar Python ni .NET SDK. |
 
-El modo AutoCAD 2026 se comprobó dentro de la instalación de Architecture. Una instalación independiente de AutoCAD, otras versiones, AutoCAD LT y macOS quedan fuera de la validación actual.
+**Alcance comprobado.** Se ha trabajado con AutoCAD Architecture 2026 y también se han comprobado la conexión, la lectura, la creación de una nota y la edición de su texto en modo AutoCAD 2026, sin funciones de Architecture cargadas. Esta última prueba se realizó con el modo AutoCAD incluido en la instalación de Architecture; una instalación independiente de AutoCAD aún no se ha comprobado. Otras versiones, AutoCAD LT y macOS quedan fuera de la validación actual.
 
 ## Tu trabajo, bajo control
 
