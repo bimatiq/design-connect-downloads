@@ -150,6 +150,6 @@ Para soporte, indica la versión, la app de IA y una descripción breve del prob
 
 ---
 
-<p align="center"><strong>BIMATIQ · Design Connect</strong><br>AutoCAD Connector para Windows</p>
+<p align="center"><strong>BIMATIQ · Design Connect</strong><br>Desarrollado y distribuido por BIMATIQ.<br>AutoCAD Connector para Windows</p>
 
-<p align="center"><a href="LICENSE.txt">Licencia</a> &nbsp; · &nbsp; <a href="NOTICE.txt">Avisos y componentes</a> &nbsp; · &nbsp; <a href="https://github.com/bimatiq/design-connect-downloads/releases">Versiones</a></p>
+<p align="center"><a href="LEGAL.md">Información legal y licencias</a> &nbsp; · &nbsp; <a href="https://github.com/bimatiq/design-connect-downloads/releases">Versiones</a></p>
