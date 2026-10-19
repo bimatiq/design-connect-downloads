@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="52" viewBox="0 0 280 52" role="img" aria-label="Descargar para Windows · x64">
+  <rect x="0.5" y="0.5" width="279" height="51" rx="8" fill="#51b8b0" stroke="#36988f"/>
+  <path d="M28 16v15m-5-5 5 5 5-5m-13 6v5h16v-5" fill="none" stroke="#122c35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="48" y="31" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#122c35">Descargar para Windows</text>
+  <text x="253" y="31" font-family="Arial, sans-serif" font-size="11" fill="#122c35">x64</text>
+</svg>
