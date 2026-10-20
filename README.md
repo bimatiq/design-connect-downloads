@@ -12,7 +12,7 @@
   <a href="https://github.com/bimatiq/design-connect-downloads/releases/latest/download/BIMATIQ.DesignConnect-stable-Setup.exe"><img src="assets/download-windows.svg" alt="Descargar para Windows · x64" width="280" height="52"></a>
 </p>
 
-<p align="center">Versión 0.2.7 &nbsp; · &nbsp; Windows x64 &nbsp; · &nbsp; AutoCAD 2026</p>
+<p align="center">Versión 0.2.8 &nbsp; · &nbsp; Windows x64 &nbsp; · &nbsp; AutoCAD 2026</p>
 
 <p align="center">
   <a href="#empieza-en-3-pasos">Instalación</a> &nbsp; / &nbsp;
@@ -107,7 +107,7 @@ Después de cambiar permisos, guarda los ajustes y desconecta y vuelve a conecta
 <details>
 <summary><strong>Windows muestra un aviso sobre el editor</strong></summary>
 
-La versión 0.2.7 no lleva firma de editor de Windows. La aprobación de las actualizaciones de BIMATIQ es una comprobación distinta y no sustituye ese certificado. Descarga únicamente desde este repositorio y respeta la política de seguridad de tu equipo.
+La versión 0.2.8 no lleva firma de editor de Windows. La aprobación de las actualizaciones de BIMATIQ es una comprobación distinta y no sustituye ese certificado. Descarga únicamente desde este repositorio y respeta la política de seguridad de tu equipo.
 
 </details>
 
@@ -132,17 +132,17 @@ La instalación no abre AutoCAD ni modifica dibujos. Para desinstalar, cierra la
 </details>
 
 <details>
-<summary><strong>Verificar la descarga 0.2.7</strong></summary>
+<summary><strong>Verificar la descarga 0.2.8</strong></summary>
 
 Archivo: **BIMATIQ.DesignConnect-stable-Setup.exe**
 
 SHA-256:
 
 ```text
-7b8c9a10c0b92006b46e44e87f2a5f1b6429848746f5a362f59c667776adc0d5
+c9c4636b0ca963be135a44d63f6fb63d5c4d51c250f33bb0e0061f2472b5f518
 ```
 
-Consulta los archivos de la [versión 0.2.7](https://github.com/bimatiq/design-connect-downloads/releases/tag/v0.2.7). El botón principal apunta siempre al instalador estable más reciente.
+Consulta los archivos de la [versión 0.2.8](https://github.com/bimatiq/design-connect-downloads/releases/tag/v0.2.8). El botón principal apunta siempre al instalador estable más reciente.
 
 </details>
 
@@ -159,3 +159,9 @@ Para soporte, indica la versión, la app de IA y una descripción breve del prob
 BIMATIQ identifica Claude Desktop instalado directamente o desde Microsoft Store. Si hay varias instalaciones, elige la app que utilizas. No necesitas editar archivos de configuración. Las rutas personalizadas y los ajustes existentes se conservan. Si no puede identificar la instalación, no cambia nada.
 
 Configurar confirma el registro; Conectado confirma que Claude ha recibido las herramientas. La conexión real debe comprobarse después de configurar tu instalación.
+
+## Actualizar y reparar
+
+Usa Buscar y aplicar para las siguientes actualizaciones aprobadas. La recuperación identifica la versión instalada, admite copias idénticas y comprueba todo el archivo antes de continuar.
+
+Si una versión anterior muestra No hay un único paquete actual para recuperación: cierra Claude, OpenAI y Ajustes de BIMATIQ cuando terminen su trabajo; descarga y ejecuta este instalador una sola vez sobre la instalación existente, desde Descargas de Windows. No desinstales ni borres carpetas: conserva tus ajustes y dibujos. Después reabre Claude. Esta reparación inicial sustituye el actualizador antiguo; la corrección no puede cambiar el código que ya está instalado antes de aplicarse.
