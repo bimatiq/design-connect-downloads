@@ -12,7 +12,7 @@
   <a href="https://github.com/bimatiq/design-connect-downloads/releases/latest/download/BIMATIQ.DesignConnect-stable-Setup.exe"><img src="assets/download-windows.svg" alt="Descargar para Windows · x64" width="280" height="52"></a>
 </p>
 
-<p align="center">Versión 0.3.1 &nbsp; · &nbsp; Windows x64 &nbsp; · &nbsp; AutoCAD 2026</p>
+<p align="center">Versión 0.3.2 &nbsp; · &nbsp; Windows x64 &nbsp; · &nbsp; AutoCAD 2026</p>
 
 <p align="center">
   <a href="#empieza-en-3-pasos">Instalación</a> &nbsp; / &nbsp;
@@ -95,7 +95,16 @@ El conector procesa el CAD localmente. Los datos que pidas en el chat se envían
 
 ## Actualizaciones
 
-**Si tienes 0.2.x:** ejecuta una vez el instalador 0.3.1 sobre la instalación existente, desde Descargas de Windows y con las conexiones de BIMATIQ cerradas. No desinstales ni borres carpetas: se conservan tus ajustes, permisos y dibujos. La nueva versión añade tres herramientas; el actualizador antiguo no amplía automáticamente el catálogo autorizado. Después reabre Claude. En OpenAI / Codex, con esa app cerrada, pulsa Configurar para actualizar su catálogo gestionado; las listas personalizadas se conservan.
+### Actualizar sin cerrar Claude ni tus chats
+
+Con 0.3.2 o posterior, abre **Conexiones → Pausar BIMATIQ**. Espera **En pausa · conexiones liberadas**, usa **Buscar y aplicar** y después **Reanudar BIMATIQ**. Si Claude no lo reintenta automáticamente, reconecta solo BIMATIQ en Claude sin cerrar tus chats. Durante la pausa puede aparecer desconectado.
+
+La pausa espera al trabajo admitido y al worker real de AutoCAD. No cancela operaciones, no guarda dibujos ni elimina los bloqueos de un resultado incierto. Las carpetas, permisos, recuperación y el catálogo de 39 herramientas se conservan.
+
+**Si tienes 0.3.0 o 0.3.1:** libera sus conexiones BIMATIQ y cierra Ajustes para esta primera instalación. Si una app mantiene una conexión activa, ciérrala una última vez para esta transición. Después podrás usar Pausar para futuras actualizaciones compatibles. Cambiar el registro/configuración de una app sigue requiriendo cerrarla para proteger sus ajustes.
+
+
+**Si tienes 0.2.x:** ejecuta una vez el instalador 0.3.2 sobre la instalación existente, desde Descargas de Windows y con las conexiones de BIMATIQ cerradas. No desinstales ni borres carpetas: se conservan tus ajustes, permisos y dibujos. La nueva versión añade tres herramientas; el actualizador antiguo no amplía automáticamente el catálogo autorizado. Después reabre Claude. En OpenAI / Codex, con esa app cerrada, pulsa Configurar para actualizar su catálogo gestionado; las listas personalizadas se conservan.
 
 **Dentro de 0.3.x:** Buscar y aplicar recibe las siguientes versiones aprobadas de catálogo compatible.
 
@@ -117,7 +126,7 @@ Después de cambiar permisos, guarda los ajustes y desconecta y vuelve a conecta
 <details>
 <summary><strong>Windows muestra un aviso sobre el editor</strong></summary>
 
-La versión 0.3.1 no lleva firma de editor de Windows. La aprobación de las actualizaciones de BIMATIQ es una comprobación distinta y no sustituye ese certificado. Descarga únicamente desde este repositorio y respeta la política de seguridad de tu equipo.
+La versión 0.3.2 no lleva firma de editor de Windows. La aprobación de las actualizaciones de BIMATIQ es una comprobación distinta y no sustituye ese certificado. Descarga únicamente desde este repositorio y respeta la política de seguridad de tu equipo.
 
 </details>
 
@@ -142,17 +151,17 @@ La instalación no abre AutoCAD ni modifica dibujos. Para desinstalar, cierra la
 </details>
 
 <details>
-<summary><strong>Verificar la descarga 0.3.1</strong></summary>
+<summary><strong>Verificar la descarga 0.3.2</strong></summary>
 
 Archivo: **BIMATIQ.DesignConnect-stable-Setup.exe**
 
 SHA-256:
 
 ```text
-09d2ee94f128f091459c62879744d9fe85932f79dc438dc4bb5e8dcf55092d77
+e0ce15a809e02ffc0418dcb13660a04b70768f6264134b69f9560bf090a5268b
 ```
 
-Consulta los archivos de la [versión 0.3.1](https://github.com/bimatiq/design-connect-downloads/releases/tag/v0.3.1). El botón principal apunta siempre al instalador estable más reciente.
+Consulta los archivos de la [versión 0.3.2](https://github.com/bimatiq/design-connect-downloads/releases/tag/v0.3.2). El botón principal apunta siempre al instalador estable más reciente.
 
 </details>
 
