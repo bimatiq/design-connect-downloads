@@ -12,7 +12,7 @@
   <a href="https://github.com/bimatiq/design-connect-downloads/releases/latest/download/BIMATIQ.DesignConnect-stable-Setup.exe"><img src="assets/download-windows.svg" alt="Descargar para Windows · x64" width="280" height="52"></a>
 </p>
 
-<p align="center">Versión 0.2.5 &nbsp; · &nbsp; Windows x64 &nbsp; · &nbsp; AutoCAD 2026</p>
+<p align="center">Versión 0.2.6 &nbsp; · &nbsp; Windows x64 &nbsp; · &nbsp; AutoCAD 2026</p>
 
 <p align="center">
   <a href="#empieza-en-3-pasos">Instalación</a> &nbsp; / &nbsp;
@@ -27,13 +27,13 @@
 
 ### 01 · Instala
 
-Descarga y ejecuta **BIMATIQ.DesignConnect-stable-Setup.exe**. No necesitas una cuenta de GitHub, Python ni .NET SDK. Si ya usas BIMATIQ, cierra todas sus conexiones antes de actualizar.
+Descarga y ejecuta **BIMATIQ.DesignConnect-stable-Setup.exe** desde la carpeta Descargas de Windows. No necesitas una cuenta de GitHub, Python ni .NET SDK. Si ya usas BIMATIQ, cierra todas sus conexiones antes de actualizar.
 
 ### 02 · Configura
 
-Abre **BIMATIQ Design Connect** desde Inicio. En **Carpetas y permisos**, autoriza una carpeta de copias de trabajo y guarda los ajustes. Activa **Creación y edición** cuando necesites modificar dibujos; el editor de texto tiene un permiso separado. Ambos empiezan desactivados.
+Abre **BIMATIQ Design Connect** desde Inicio. En **Conexiones**, pulsa **Elegir carpeta** y selecciona una carpeta de copias de trabajo. Pulsa **Guardar ajustes** en **Carpetas y permisos** para autorizarla; las selecciones pendientes no conceden acceso. Activa **Creación y edición** cuando necesites modificar dibujos; el editor de texto tiene un permiso separado. Ambos empiezan desactivados.
 
-Cierra la app de IA que vayas a configurar. En **Conexiones**, pulsa **Configurar** junto a OpenAI / Codex o Claude Desktop. Después vuelve a abrirla. La ruta avanzada es opcional; no necesitas buscar archivos de configuración.
+Cierra la app de IA que vayas a configurar. En **Conexiones**, pulsa **Configurar** junto a Claude Desktop u OpenAI / Codex. Después vuelve a abrirla. La ruta avanzada es opcional; no necesitas buscar archivos de configuración.
 
 ### 03 · Empieza desde tu chat
 
@@ -41,7 +41,7 @@ Abre AutoCAD con una copia de trabajo. Comprueba en tu app de IA que aparece **b
 
 > Usa BIMATIQ Design Connect para identificar el dibujo activo y sus unidades. No cambies ni guardes nada.
 
-**Configurado** indica que se han registrado los ajustes; la conexión se confirma dentro de la app de IA. Estos registros locales sirven para Codex local y Claude Desktop. No conectan ChatGPT web ni móvil.
+**Configurado** confirma que se han guardado los ajustes de conexión. **Conectado** confirma que la app ha recibido las herramientas; **AutoCAD aún sin comprobar** significa que todavía no se ha consultado un dibujo. El panel también distingue qué conexión controla las herramientas y la última consulta realizada. Estos registros locales sirven para Codex local y Claude Desktop. No conectan ChatGPT web ni móvil.
 
 <details>
 <summary><strong>Ver el panel de BIMATIQ Design Connect</strong></summary>
@@ -107,7 +107,7 @@ Después de cambiar permisos, guarda los ajustes y desconecta y vuelve a conecta
 <details>
 <summary><strong>Windows muestra un aviso sobre el editor</strong></summary>
 
-La versión 0.2.5 no lleva firma de editor de Windows. La aprobación de las actualizaciones de BIMATIQ es una comprobación distinta y no sustituye ese certificado. Descarga únicamente desde este repositorio y respeta la política de seguridad de tu equipo.
+La versión 0.2.6 no lleva firma de editor de Windows. La aprobación de las actualizaciones de BIMATIQ es una comprobación distinta y no sustituye ese certificado. Descarga únicamente desde este repositorio y respeta la política de seguridad de tu equipo.
 
 </details>
 
@@ -132,17 +132,17 @@ La instalación no abre AutoCAD ni modifica dibujos. Para desinstalar, cierra la
 </details>
 
 <details>
-<summary><strong>Verificar la descarga 0.2.5</strong></summary>
+<summary><strong>Verificar la descarga 0.2.6</strong></summary>
 
 Archivo: **BIMATIQ.DesignConnect-stable-Setup.exe**
 
 SHA-256:
 
 ```text
-64ac744823f111b4effeb1225167be5ca91749f84c94c05291f8fe1196a0fde5
+f20278e20b34980d3fdbba73ea27e67c7d4ac3cb7a2b233756e3c205679c652e
 ```
 
-Consulta los archivos de la [versión 0.2.5](https://github.com/bimatiq/design-connect-downloads/releases/tag/v0.2.5). El botón principal apunta siempre al instalador estable más reciente.
+Consulta los archivos de la [versión 0.2.6](https://github.com/bimatiq/design-connect-downloads/releases/tag/v0.2.6). El botón principal apunta siempre al instalador estable más reciente.
 
 </details>
 
