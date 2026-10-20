@@ -12,7 +12,7 @@
   <a href="https://github.com/bimatiq/design-connect-downloads/releases/latest/download/BIMATIQ.DesignConnect-stable-Setup.exe"><img src="assets/download-windows.svg" alt="Descargar para Windows · x64" width="280" height="52"></a>
 </p>
 
-<p align="center">Versión 0.2.6 &nbsp; · &nbsp; Windows x64 &nbsp; · &nbsp; AutoCAD 2026</p>
+<p align="center">Versión 0.2.7 &nbsp; · &nbsp; Windows x64 &nbsp; · &nbsp; AutoCAD 2026</p>
 
 <p align="center">
   <a href="#empieza-en-3-pasos">Instalación</a> &nbsp; / &nbsp;
@@ -107,7 +107,7 @@ Después de cambiar permisos, guarda los ajustes y desconecta y vuelve a conecta
 <details>
 <summary><strong>Windows muestra un aviso sobre el editor</strong></summary>
 
-La versión 0.2.6 no lleva firma de editor de Windows. La aprobación de las actualizaciones de BIMATIQ es una comprobación distinta y no sustituye ese certificado. Descarga únicamente desde este repositorio y respeta la política de seguridad de tu equipo.
+La versión 0.2.7 no lleva firma de editor de Windows. La aprobación de las actualizaciones de BIMATIQ es una comprobación distinta y no sustituye ese certificado. Descarga únicamente desde este repositorio y respeta la política de seguridad de tu equipo.
 
 </details>
 
@@ -132,17 +132,17 @@ La instalación no abre AutoCAD ni modifica dibujos. Para desinstalar, cierra la
 </details>
 
 <details>
-<summary><strong>Verificar la descarga 0.2.6</strong></summary>
+<summary><strong>Verificar la descarga 0.2.7</strong></summary>
 
 Archivo: **BIMATIQ.DesignConnect-stable-Setup.exe**
 
 SHA-256:
 
 ```text
-f20278e20b34980d3fdbba73ea27e67c7d4ac3cb7a2b233756e3c205679c652e
+7b8c9a10c0b92006b46e44e87f2a5f1b6429848746f5a362f59c667776adc0d5
 ```
 
-Consulta los archivos de la [versión 0.2.6](https://github.com/bimatiq/design-connect-downloads/releases/tag/v0.2.6). El botón principal apunta siempre al instalador estable más reciente.
+Consulta los archivos de la [versión 0.2.7](https://github.com/bimatiq/design-connect-downloads/releases/tag/v0.2.7). El botón principal apunta siempre al instalador estable más reciente.
 
 </details>
 
@@ -153,3 +153,9 @@ Para soporte, indica la versión, la app de IA y una descripción breve del prob
 <p align="center"><strong>BIMATIQ · Design Connect</strong><br>Desarrollado y distribuido por BIMATIQ.<br>AutoCAD Connector para Windows</p>
 
 <p align="center"><a href="LEGAL.md">Información legal y licencias</a> &nbsp; · &nbsp; <a href="https://github.com/bimatiq/design-connect-downloads/releases">Versiones</a></p>
+
+## Detección de Claude en Windows
+
+BIMATIQ identifica Claude Desktop instalado directamente o desde Microsoft Store. Si hay varias instalaciones, elige la app que utilizas. No necesitas editar archivos de configuración. Las rutas personalizadas y los ajustes existentes se conservan. Si no puede identificar la instalación, no cambia nada.
+
+Configurar confirma el registro; Conectado confirma que Claude ha recibido las herramientas. La conexión real debe comprobarse después de configurar tu instalación.
