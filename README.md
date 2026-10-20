@@ -12,7 +12,7 @@
   <a href="https://github.com/bimatiq/design-connect-downloads/releases/latest/download/BIMATIQ.DesignConnect-stable-Setup.exe"><img src="assets/download-windows.svg" alt="Descargar para Windows · x64" width="280" height="52"></a>
 </p>
 
-<p align="center">Versión 0.2.8 &nbsp; · &nbsp; Windows x64 &nbsp; · &nbsp; AutoCAD 2026</p>
+<p align="center">Versión 0.3.1 &nbsp; · &nbsp; Windows x64 &nbsp; · &nbsp; AutoCAD 2026</p>
 
 <p align="center">
   <a href="#empieza-en-3-pasos">Instalación</a> &nbsp; / &nbsp;
@@ -55,14 +55,20 @@ Abre AutoCAD con una copia de trabajo. Comprueba en tu app de IA que aparece **b
 
 | Trabajo | Capacidad incluida |
 | :--- | :--- |
-| **Consultar y revisar** | Documentos, capas, objetos, tablas, puertas, ventanas y atributos. |
-| **Crear en un DWG abierto** | Líneas, polilíneas, círculos, notas, cotas, capas e inserción de bloques existentes. |
+| **Consultar y revisar** | Documentos, capas, objetos, tablas, puertas, ventanas, atributos y selección actual en Modelo. |
+| **Crear en un DWG abierto** | Líneas, polilíneas, círculos, notas, cotas, capas, creación de bloques estáticos e inserción de definiciones propias o importadas de DXF. |
 | **Editar en un DWG abierto** | Mover, copiar y borrar objetos ordinarios; cambiar atributos de bloques estáticos. |
 | **Trabajar con DXF** | Crear y modificar geometría, curvas continuas, textos, bloques, cotas y hojas; exportar PDF, PNG o SVG. |
 
-Las **36 herramientas** incluyen lectura, creación y edición. Para cambiar un dibujo, el flujo es identificarlo y comprobar sus unidades, preparar una vista previa y confirmar el cambio. Si cambia el estado comprobado, la aplicación del cambio se rechaza.
+Las **39 herramientas** incluyen lectura, creación y edición. Para cambiar un dibujo, el flujo es identificarlo y comprobar sus unidades, preparar una vista previa y confirmar el cambio. Si cambia el estado comprobado, la aplicación del cambio se rechaza.
 
 **En DWG**, revisas el resultado y guardas tú desde AutoCAD. **En DXF**, confirmar la aplicación guarda el archivo y conserva una copia inmediatamente anterior cuando se reemplaza. Un DXF se abre en AutoCAD, pero no se presenta como un DWG.
+
+### Selección y bloques en Modelo
+
+Selecciona objetos en AutoCAD y pide su lectura desde el chat. Una selección vacía devuelve cero objetos; no inicia un recorrido del dibujo. Puedes crear una definición estática con objetos ordinarios conservando los originales, o importar una definición de un DXF autorizado y colocarla con sus atributos.
+
+La importación no traslada todo el DXF ni redefine bloques existentes. Admite hasta 100 objetos por definición, unidades iguales y capas de destino existentes desbloqueadas. Admite líneas, círculos, arcos, polilíneas continuas con curvas, texto/MTEXT compatibles, atributos simples, puntos y elipses. La vista previa identifica las capas y estilos de destino. Rechaza tipos no admitidos, bloques anidados o dinámicos, referencias externas y conversiones implícitas.
 
 ## Compatibilidad
 
@@ -89,6 +95,10 @@ El conector procesa el CAD localmente. Los datos que pidas en el chat se envían
 
 ## Actualizaciones
 
+**Si tienes 0.2.x:** ejecuta una vez el instalador 0.3.1 sobre la instalación existente, desde Descargas de Windows y con las conexiones de BIMATIQ cerradas. No desinstales ni borres carpetas: se conservan tus ajustes, permisos y dibujos. La nueva versión añade tres herramientas; el actualizador antiguo no amplía automáticamente el catálogo autorizado. Después reabre Claude. En OpenAI / Codex, con esa app cerrada, pulsa Configurar para actualizar su catálogo gestionado; las listas personalizadas se conservan.
+
+**Dentro de 0.3.x:** Buscar y aplicar recibe las siguientes versiones aprobadas de catálogo compatible.
+
 El canal de versiones aprobadas está disponible. BIMATIQ comprueba las actualizaciones al iniciar una sesión que obtiene el control o desde **Ajustes → Actualizaciones**. Se aplican entre sesiones, con verificación de aprobación e integridad, conservando tus ajustes y la recuperación de la versión anterior.
 
 Puedes pausar las actualizaciones o buscarlas manualmente. Si no hay conexión o la versión no está aprobada, se conserva la instalación actual. **Los usuarios no necesitan claves privadas, copias de claves ni una cuenta de GitHub.**
@@ -107,7 +117,7 @@ Después de cambiar permisos, guarda los ajustes y desconecta y vuelve a conecta
 <details>
 <summary><strong>Windows muestra un aviso sobre el editor</strong></summary>
 
-La versión 0.2.8 no lleva firma de editor de Windows. La aprobación de las actualizaciones de BIMATIQ es una comprobación distinta y no sustituye ese certificado. Descarga únicamente desde este repositorio y respeta la política de seguridad de tu equipo.
+La versión 0.3.1 no lleva firma de editor de Windows. La aprobación de las actualizaciones de BIMATIQ es una comprobación distinta y no sustituye ese certificado. Descarga únicamente desde este repositorio y respeta la política de seguridad de tu equipo.
 
 </details>
 
@@ -132,17 +142,17 @@ La instalación no abre AutoCAD ni modifica dibujos. Para desinstalar, cierra la
 </details>
 
 <details>
-<summary><strong>Verificar la descarga 0.2.8</strong></summary>
+<summary><strong>Verificar la descarga 0.3.1</strong></summary>
 
 Archivo: **BIMATIQ.DesignConnect-stable-Setup.exe**
 
 SHA-256:
 
 ```text
-c9c4636b0ca963be135a44d63f6fb63d5c4d51c250f33bb0e0061f2472b5f518
+09d2ee94f128f091459c62879744d9fe85932f79dc438dc4bb5e8dcf55092d77
 ```
 
-Consulta los archivos de la [versión 0.2.8](https://github.com/bimatiq/design-connect-downloads/releases/tag/v0.2.8). El botón principal apunta siempre al instalador estable más reciente.
+Consulta los archivos de la [versión 0.3.1](https://github.com/bimatiq/design-connect-downloads/releases/tag/v0.3.1). El botón principal apunta siempre al instalador estable más reciente.
 
 </details>
 
@@ -156,7 +166,7 @@ Para soporte, indica la versión, la app de IA y una descripción breve del prob
 
 ## Detección de Claude en Windows
 
-BIMATIQ identifica Claude Desktop instalado directamente o desde Microsoft Store. Si hay varias instalaciones, elige la app que utilizas. No necesitas editar archivos de configuración. Las rutas personalizadas y los ajustes existentes se conservan. Si no puede identificar la instalación, no cambia nada.
+BIMATIQ identifica Claude Desktop instalado directamente o desde Microsoft Store. Reconoce el traslado a Claude-Data cuando hay evidencia del perfil; si las ubicaciones entran en conflicto, conserva la configuración. Si BIMATIQ no aparecía antes, cierra Claude y pulsa Configurar de nuevo. Si hay varias instalaciones, elige la app que utilizas. No necesitas editar archivos de configuración. Las rutas personalizadas y los ajustes existentes se conservan. Si no puede identificar la instalación, no cambia nada.
 
 Configurar confirma el registro; Conectado confirma que Claude ha recibido las herramientas. La conexión real debe comprobarse después de configurar tu instalación.
 
