@@ -12,7 +12,7 @@
   <a href="https://github.com/bimatiq/design-connect-downloads/releases/latest/download/BIMATIQ.DesignConnect-stable-Setup.exe"><img src="assets/download-windows.svg" alt="Descargar para Windows · x64" width="280" height="52"></a>
 </p>
 
-<p align="center">Versión 0.4.0 &nbsp; · &nbsp; Windows x64 &nbsp; · &nbsp; AutoCAD 2026</p>
+<p align="center">Versión 0.5.0 &nbsp; · &nbsp; Windows x64 &nbsp; · &nbsp; AutoCAD 2026</p>
 
 <p align="center">
   <a href="#empieza-en-3-pasos">Instalación</a> &nbsp; / &nbsp;
@@ -62,15 +62,15 @@ Abre AutoCAD con una copia de trabajo. Comprueba en tu app de IA que aparece **b
 | **Revisar y medir DXF** | Inventario/cajetines, auditoría por lote, reglas CAD, Xrefs, anotaciones, cotas, unidades, comparación de revisiones, áreas, longitudes, hatches y candidatos de huecos. |
 | **Preparar información de entrega** | Cuadro de aberturas por atributos, preflight de hojas, conciliación CAD–Excel de lectura y registro de observaciones con exportación JSON protegida. |
 
-Las **39 herramientas** incluyen lectura, creación y edición. Para cambiar un dibujo, el flujo es identificarlo y comprobar sus unidades, preparar una vista previa y confirmar el cambio. Si cambia el estado comprobado, la aplicación del cambio se rechaza.
+Las **40 herramientas** incluyen lectura, creación y edición. Para cambiar un dibujo, el flujo es identificarlo y comprobar sus unidades, preparar una vista previa y confirmar el cambio. Si cambia el estado comprobado, la aplicación del cambio se rechaza.
 
 **En DWG**, revisas el resultado y guardas tú desde AutoCAD. **En DXF**, confirmar la aplicación guarda el archivo y conserva una copia inmediatamente anterior cuando se reemplaza. Un DXF se abre en AutoCAD, pero no se presenta como un DWG.
 
 ### Informes con alcance explícito
 
-Los informes trabajan sobre copias DXF guardadas y autorizadas. Indica unidades, tolerancias, límites y expectativas cuando se soliciten. Geometría no admitida, identificadores ambiguos y detalle recortado se declaran. Los materiales y nombres de zonas los proporciona el usuario. No certifican cumplimiento DWS, diseño o impresión nativa; no actualizan CAD y Excel entre sí. **La lectura de información de PDF no está incluida.** La exportación de PDF existente se conserva.
+Los informes trabajan sobre copias DXF guardadas y autorizadas. Indica unidades, tolerancias, límites y expectativas cuando se soliciten. Geometría no admitida, identificadores ambiguos y detalle recortado se declaran. Los materiales y nombres de zonas los proporciona el usuario. No certifican cumplimiento DWS, diseño o impresión nativa; no actualizan CAD y Excel entre sí. **PDF:** lectura de texto seleccionable y metadatos por página, sin AutoCAD. Sin OCR ni reconstrucción de geometría; alcance, recortes y límites explícitos. La exportación de PDF existente se conserva.
 
-La validación de esta ampliación es offline con archivos sintéticos. La mejora medida reduce memoria de generación de snapshots limitados; no se afirma una mejora de velocidad ni del pico de memoria de la llamada completa.
+La validación es offline con archivos sintéticos. Agrupar informes admitidos del mismo DXF reutiliza una lectura: tres informes medidos resultaron 59–68% más rápidos. No se afirma aceleración de llamadas individuales, AutoCAD o IA; la respuesta fue aproximadamente 13% mayor y el pico total de memoria apenas cambió.
 
 ### Selección y bloques en Modelo
 
@@ -103,22 +103,17 @@ El conector procesa el CAD localmente. Los datos que pidas en el chat se envían
 
 ## Actualizaciones
 
-### Actualizar sin cerrar Claude ni tus chats
+### Primera actualización al catálogo de 40 herramientas
 
-Con 0.3.2 o posterior, abre **Conexiones → Pausar BIMATIQ**. Espera **En pausa · conexiones liberadas**, usa **Buscar y aplicar** y después **Reanudar BIMATIQ**. Si Claude no lo reintenta automáticamente, reconecta solo BIMATIQ en Claude sin cerrar tus chats. Durante la pausa puede aparecer desconectado.
+Si vienes de 0.4.0 o anterior, descarga y ejecuta **este instalador una sola vez** sobre la misma instalación. El actualizador anterior rechaza el nuevo catálogo por seguridad; no desinstales ni borres carpetas.
 
-La pausa espera al trabajo admitido y al worker real de AutoCAD. No cancela operaciones, no guarda dibujos ni elimina los bloqueos de un resultado incierto. Las carpetas, permisos, recuperación y el catálogo de 39 herramientas se conservan.
+1. Pulsa **Pausar BIMATIQ** y espera **En pausa · conexiones liberadas**. Si tu versión no tiene pausa, cierra las conexiones BIMATIQ al terminar su trabajo. Una operación pendiente o incierta debe resolverse antes.
+2. Cierra Ajustes de BIMATIQ y ejecuta el instalador desde Descargas de Windows. Las carpetas, permisos y la pausa se conservan fuera de los binarios.
+3. **Claude:** reanuda BIMATIQ y reconecta solo el conector; el comando existente se conserva. **OpenAI / Codex:** cierra esa app y pulsa **Configurar** una vez para añadir PDF a su registro gestionado. Una lista personalizada o entrada modificada no se amplía automáticamente.
 
-**Si tienes 0.3.0 o 0.3.1:** libera sus conexiones BIMATIQ y cierra Ajustes para esta primera instalación. Si una app mantiene una conexión activa, ciérrala una última vez para esta transición. Después podrás usar Pausar para futuras actualizaciones compatibles. Cambiar el registro/configuración de una app sigue requiriendo cerrarla para proteger sus ajustes.
+### Después de esta transición
 
-
-**Si tienes 0.2.x:** ejecuta una vez el instalador actual sobre la instalación existente, desde Descargas de Windows y con las conexiones de BIMATIQ cerradas. No desinstales ni borres carpetas: se conservan tus ajustes, permisos y dibujos. La nueva versión añade tres herramientas; el actualizador antiguo no amplía automáticamente el catálogo autorizado. Después reabre Claude. En OpenAI / Codex, con esa app cerrada, pulsa Configurar para actualizar su catálogo gestionado; las listas personalizadas se conservan.
-
-**Desde 0.3.2 y versiones posteriores:** Buscar y aplicar recibe las siguientes versiones aprobadas de catálogo compatible.
-
-El canal de versiones aprobadas está disponible. BIMATIQ comprueba las actualizaciones al iniciar una sesión que obtiene el control o desde **Ajustes → Actualizaciones**. Se aplican entre sesiones, con verificación de aprobación e integridad, conservando tus ajustes y la recuperación de la versión anterior.
-
-Puedes pausar las actualizaciones o buscarlas manualmente. Si no hay conexión o la versión no está aprobada, se conserva la instalación actual. **Los usuarios no necesitan claves privadas, copias de claves ni una cuenta de GitHub.**
+Para futuras versiones aprobadas con el mismo catálogo, pausa BIMATIQ, espera a que se libere y usa **Buscar y aplicar**. Las firmas, hashes, recuperación y exclusión de sesiones siguen siendo obligatorios. No necesitas cerrar tus chats de Claude para las actualizaciones compatibles.
 
 ## Ayuda
 
@@ -134,7 +129,7 @@ Después de cambiar permisos, guarda los ajustes y desconecta y vuelve a conecta
 <details>
 <summary><strong>Windows muestra un aviso sobre el editor</strong></summary>
 
-La versión 0.3.2 no lleva firma de editor de Windows. La aprobación de las actualizaciones de BIMATIQ es una comprobación distinta y no sustituye ese certificado. Descarga únicamente desde este repositorio y respeta la política de seguridad de tu equipo.
+La versión 0.5.0 no lleva firma de editor de Windows. La aprobación de las actualizaciones de BIMATIQ es una comprobación distinta y no sustituye ese certificado. Descarga únicamente desde este repositorio y respeta la política de seguridad de tu equipo.
 
 </details>
 
@@ -159,17 +154,17 @@ La instalación no abre AutoCAD ni modifica dibujos. Para desinstalar, cierra la
 </details>
 
 <details>
-<summary><strong>Verificar la descarga 0.3.2</strong></summary>
+<summary><strong>Verificar la descarga 0.5.0</strong></summary>
 
 Archivo: **BIMATIQ.DesignConnect-stable-Setup.exe**
 
 SHA-256:
 
 ```text
-e0ce15a809e02ffc0418dcb13660a04b70768f6264134b69f9560bf090a5268b
+f6fe4201df96d57c6002e3e57c7c1b0aac7230ab09ffd5b6a51262622c8fb049
 ```
 
-Consulta los archivos de la [versión 0.3.2](https://github.com/bimatiq/design-connect-downloads/releases/tag/v0.3.2). El botón principal apunta siempre al instalador estable más reciente.
+Consulta los archivos de la [versión 0.5.0](https://github.com/bimatiq/design-connect-downloads/releases/tag/v0.5.0). El botón principal apunta siempre al instalador estable más reciente.
 
 </details>
 
@@ -189,6 +184,6 @@ Configurar confirma el registro; Conectado confirma que Claude ha recibido las h
 
 ## Actualizar y reparar
 
-Usa Buscar y aplicar para las siguientes actualizaciones aprobadas. La recuperación identifica la versión instalada, admite copias idénticas y comprueba todo el archivo antes de continuar.
+Tras la transición de catálogo indicada arriba, usa Buscar y aplicar para las siguientes actualizaciones aprobadas. La recuperación identifica la versión instalada, admite copias idénticas y comprueba todo el archivo antes de continuar.
 
 Si una versión anterior muestra No hay un único paquete actual para recuperación: cierra Claude, OpenAI y Ajustes de BIMATIQ cuando terminen su trabajo; descarga y ejecuta este instalador una sola vez sobre la instalación existente, desde Descargas de Windows. No desinstales ni borres carpetas: conserva tus ajustes y dibujos. Después reabre Claude. Esta reparación inicial sustituye el actualizador antiguo; la corrección no puede cambiar el código que ya está instalado antes de aplicarse.
